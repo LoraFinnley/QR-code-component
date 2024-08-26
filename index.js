@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import qrcode from "qrcode";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const app = express();
 const port = 3000;
