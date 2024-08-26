@@ -5,6 +5,8 @@ import { fileURLToPath } from "url";
 import qrcode from "qrcode";
 
 const app = express();
+app.set('view engine', 'ejs');
+
 const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const qrCodeUrl = "https://www.frontendmentor.io?ref=challenge";
