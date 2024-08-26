@@ -10,20 +10,34 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
     <title>Frontend Mentor | QR code component</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class = "main-container">
     <div class="card qrCard">
-      <div class="card bg-primary">
-        <img
-          src="qrcode.png"
-          alt="https://www.frontendmentor.io?ref=challenge"
-        />
+      <div class="qr-container">
+      <div class = qr-background>
+        <div class = "circle circle1"></div>
+        <div class="circle circle2"></div>
+        <img class = "qrCode"
+            src="qrcode.png"
+            alt="https://www.frontendmentor.io?ref=challenge"
+          />
       </div>
+    </div>
+
+
+
+      
       <div class="card-body">
-        <p class="card-text">
+        <p class="card-text title">
           Improve your front-end skills by building projects
         </p>
         <p class="card-text"> Scan the QR code to
@@ -31,5 +45,6 @@
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
